@@ -1,0 +1,124 @@
+body{
+  background-color: #323946;
+}
+.navbar {
+    width: 100%;
+    background-color:black;
+    overflow: auto;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .navbar a:hover{
+    background-color: #000;
+  }
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+ /*styling the input types in the contact form  */
+ input[type=text],textarea,input[type=email]
+{
+width:98%;
+padding:12px;
+border:3px solid black;
+border-radius: 4px;
+box-sizing: border-box;/* Make sure that padding and width stays in place */
+margin-top:6px;
+margin-bottom: 16px;
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit]
+{
+    background-color:black;
+    color:white;
+    padding:12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+input[type=submit]:hover
+{
+background-color: #ffe605;
+color: #000;
+border: 2px solid black;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/* To change the color of nvbar as we will hover over the navbar elements */
+.navbar a:hover,
+ .navbar a.active{    /*the home button will always looks like blue */
+    color: #f7de04;
+}
+
+
+.section h1{
+  font-size:3rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: black;
+}
+
+
+.section h1:nth-of-type(2)
+{
+  margin-bottom: 2rem;
+}
+span{
+  color:#f7de04;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: .5rem 1%;
+  background-color: #323946;
+}
+
+.footer-text{
+  font-size: 1.2rem;
+  color: white;
+}
+
+.footer-iconTop a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .4rem;
+  background: #f7de04;
+  border-radius: .8rem;
+  transition: .5 ease;
+}
+
+.footer-iconTop a:hover{
+  box-shadow: 0 0 1rem #f7de04;
+}
+
+.footer-iconTop a i{
+  font-size: 2.4rem;
+  color:#323946;
+}
+ 
+
+

@@ -1,0 +1,56 @@
+.navbar {
+    width: 100%;
+    background-color:black;
+    overflow: auto;
+  }
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .navbar a:hover{
+    background-color: #000;
+  }
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .left-container{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .left-container
+  {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
+  }
+  .right-container
+  {
+  position: absolute;
+  top: 0px;
+  left: 900px;
+  right: 100px;
+  padding-right: 50px;
+  border-radius: 5px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  }
+  .bottom-container
+  {
+    position: absolute;
+    bottom: 8px;
+    left: 120px;
+    top:550px;
+   
+  }
+
